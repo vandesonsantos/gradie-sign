@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor-conteiner-gradie: #003142;
+    --cor-conteiner-login: #FEFEFE;
+    --cor-titulo-gradie: #fff;
+    --cor-beautiful-gradie: rgba(255, 255, 255, 0.767);
+
+    --fonte-padrao: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    margin-top: 80px;
+    background-image: url("../imagens/Background.png");
+    background-repeat: no-repeat;
+    
+}
+
+.conteiner-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conteiner-gradie{
+    background-color: var(--cor-conteiner-gradie);
+    width: 300px;
+    height: 375px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+}
+
+.conteiner-gradie h1{
+    color: var(--cor-titulo-gradie);
+    margin-top: 30px;
+}
+
+.conteiner-gradie p{
+    color: var(--cor-beautiful-gradie);
+    font-size: 13px;
+    margin-top: 5px;
+    text-shadow: 1px 1px #fefefe2f;
+}
+
+.imagem-iphone{
+    width: 98%;    
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width: 650px){
+    body{
+        background-image: url("../imagens/Background-mobile.png");
+    }
+
+    .conteiner-gradie{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .conteiner-gradie h1{
+        font-size: 30px;
+    }
+}
+
+/* LOGIN */
+.conteiner-login{
+    background-color: var(--cor-conteiner-login);
+    width: 300px;
+    height: 375px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #99999963;
+}
+
+.conteiner-login h2{
+    margin-top: 30px;
+    font-size: 31px;
+    margin-left: 40px;
+}
+
+.formulario{
+    margin-top: 15px;
+}
+
+.formulario .titulo-email, .titulo-senha{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.formulario .email, .senha{
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.formulario .input-email{
+    margin-bottom: 15px;
+}
+
+.formulario .input-email, .input-senha{
+    width: 190px;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+.check-box{
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0px 50px 0px 50px;
+    cursor: pointer;
+    text-shadow: 1px 1px #0000004d;
+}
+
+.check-box span a{
+    color: #003142;
+    font-weight: 500;
+}
+
+/* BOTÃO */
+.conteiner-botao{
+    text-align: center;
+}
+
+.conteiner-botao .botao{
+    background-color: #003142;
+    color: #FEFEFE;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width: 630px){
+    .conteiner-login{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .conteiner-login h2{
+        font-size: 27px;
+    }
+}
